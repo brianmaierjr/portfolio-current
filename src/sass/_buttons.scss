@@ -2,7 +2,7 @@
 .btn {
   background-color: var(--green);
   color: var(--charcoal);
-  padding: 0.6em 1.5em;
+  padding: 0.5em 1.5em 0.6em;
   text-decoration: none;
   border-radius: 3em;
   font-family: var(--font-hk-bold);
@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s all ease-in-out;
+  font-size: 1.2rem;
 }
 .btn:hover,
 .btn:focus {
@@ -17,4 +18,13 @@
 }
 .btn__icon {
   margin-right: 0.5em;
+}
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  color: var(--green);
+}
+
+.btnGroup .btn {
+  margin: 0 1em 1em 0;
 }

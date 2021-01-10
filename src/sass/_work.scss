@@ -1,0 +1,16 @@
+@media (min-width: 800px) {
+  .work {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .work__header {
+    grid-column: 8 / span 16;
+    margin-bottom: 3em;
+  }
+  .work__main {
+    grid-column: 3 / span 20;
+  }
+  .work__main img {
+    width: 100%;
+  }
+}

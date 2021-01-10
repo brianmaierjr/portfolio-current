@@ -25,7 +25,8 @@ h1 .subheading {
   font-weight: normal;
   text-transform: uppercase;
   font-size: var(--subheading-font-size);
-  color: white;
+  color: var(--gray--light);
+  letter-spacing: 1px;
 }
 
 p {
