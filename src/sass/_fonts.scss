@@ -1,0 +1,49 @@
+// Fonts
+@font-face {
+  font-family: "hk_groteskbold";
+  src: url("../fonts/hkgrotesk-bold-webfont.woff2") format("woff2"),
+    url("../fonts/hkgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_groteskbold_italic";
+  src: url("../fonts/hkgrotesk-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/hkgrotesk-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_groteskitalic";
+  src: url("../fonts/hkgrotesk-italic-webfont.woff2") format("woff2"),
+    url("../fonts/hkgrotesk-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_groteskregular";
+  src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
+    url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hk_grotesksemibold";
+  src: url("../fonts/hkgrotesk-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/hkgrotesk-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  src: local(""), url("../fonts/barlow-v5-latin-800.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/barlow-v5-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

@@ -1,0 +1,15 @@
+// Social Links
+.socialLinks {
+  display: flex;
+}
+.socialLinks a {
+  color: var(--purple);
+}
+.socialLinks a:hover,
+.socialLinks a:focus {
+  color: white;
+}
+.socialLinks svg {
+  fill: currentColor;
+  transition: 0.2s all ease-in-out;
+}

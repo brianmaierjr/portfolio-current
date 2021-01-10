@@ -1,0 +1,27 @@
+@media (min-width: 800px) {
+  .sectionSplit {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .sectionSplit__left {
+    grid-column: 3 / span 8;
+  }
+  .sectionSplit__right {
+    grid-column: 12 / span 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__content .btn {
+    align-self: flex-start;
+  }
+  .sectionPartial {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: 1em 1em 0 0 var(--gray);
+  }
+  .sectionPartial > * {
+    grid-column: 3 / span 14;
+  }
+}

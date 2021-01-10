@@ -1,0 +1,20 @@
+// Buttons
+.btn {
+  background-color: var(--green);
+  color: var(--charcoal);
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+  border-radius: 3em;
+  font-family: var(--font-hk-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease-in-out;
+}
+.btn:hover,
+.btn:focus {
+  background-color: white;
+}
+.btn__icon {
+  margin-right: 0.5em;
+}

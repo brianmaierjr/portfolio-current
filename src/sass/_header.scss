@@ -1,0 +1,42 @@
+// Header
+header .socialLinks {
+  margin-top: 2rem;
+}
+header .socialLinks li {
+  margin-right: 1em;
+}
+.header__hero img {
+  width: 100%;
+}
+
+@media (max-width: 799px) {
+  .header__hero {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+  }
+  .header__hero img {
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  header.section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .socialLinks {
+    flex-direction: column;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+  }
+  header .socialLinks li {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}

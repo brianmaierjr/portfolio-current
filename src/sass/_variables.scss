@@ -1,0 +1,57 @@
+// Variables
+:root {
+  // Colors
+  --gray: #1d1d1d;
+  --charcoal: #141414;
+  --purple: #6d55f5;
+  --purple--dark: #201d34;
+  --green: #a2d90a;
+  // Spacing
+  --sp-sm: 1em;
+  --sp-md: 2em;
+  --sp-lg: 3em;
+  --sp-section: 2.2em;
+  // Typography
+  --root-font-size: 18px;
+  --root-line-height: 1.45;
+  --subheading-font-size: 0.4em;
+  --h1-font-size: 2.5em;
+  --h1-line-height: 1.22;
+  --h2-font-size: 2.22em;
+  --h2-line-height: 1.22;
+  --font-hk-regular: "hk_groteskregular", sans-serif;
+  --font-hk-italic: "hk_groteskitalic", sans-serif;
+  --font-hk-bold: "hk_groteskbold", sans-serif;
+  --font-hk-bold-italic: "hk_groteskbold_italic", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+  --mobile-padding: 30px;
+}
+@media (min-width: 800px) {
+  :root {
+    --root-font-size: 20px;
+    --root-line-height: 1.55;
+    --h1-font-size: 2.25em;
+    --h1-line-height: 1.05;
+    --h2-font-size: 2em;
+    --sp-section: 5em;
+  }
+}
+
+@media (min-width: 1240px) {
+  :root {
+    --sp-section: 10em;
+    --h1-font-size: 3.5em;
+    --h1-line-height: 1.05;
+    --h2-font-size: 3.2em;
+    --subheading-font-size: 0.3em;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --root-font-size: 22px;
+    --h1-font-size: 4.25em;
+    --h2-font-size: 3.5em;
+    --subheading-font-size: 0.25em;
+  }
+}

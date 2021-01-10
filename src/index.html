@@ -1,0 +1,102 @@
+---
+layout: default.liquid
+title: Home Page
+---
+
+<header class="section sectionSplit"> 
+	<div class="header__hero sectionSplit__left">
+		<picture> 
+			<source srcset="/assets/img/me.webp" type="image/webp" media="(min-width: 801px)">
+			<source srcset="/assets/img/me--sm.webp" type="image/webp" media="(max-width: 800px)">
+			<source srcset="/assets/img/me.jpg" type="image/jpeg" media="(min-width: 801px)">
+			<source srcset="/assets/img/me--sm.jpg" type="image/jpeg" media="(max-width: 800px)">
+			<img src="/assets/img/me.jpg" alt="Fine looking lad.">
+		</picture>
+	</div>
+	<div class="header__content sectionSplit__right">
+		<h1 class="u-text--purple">
+			<span class="subheading">Brian Maier Jr.</span><br>
+			UI/UX Designer &amp; Front-end Developer
+		</h1>
+		<p>I specialize in building unique digital experiences that delight users, benefit companies, and make better products.</p>
+		<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
+	</div>
+	<ul class="headerSocial socialLinks u-noList"> 
+		<li>
+			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together.">
+				{% include icons/envelope.svg %}
+			</a>
+		</li>
+		<li>
+			<a href="https://dribbble.com/brianmaierjr" target="_blank"
+				>{% include icons/dribbble.svg %}</a
+			>
+		</li>
+		<li>
+			<a href="https://github.com/brianmaierjr" target="_blank"
+				>{% include icons/github.svg %}</a
+			>
+		</li>
+		<li>
+			<a href="https://twitter.com/brianmaierjr" target="_blank"
+				>{% include icons/twitter.svg %}</a
+			>
+		</li>
+	</ul>
+</header>
+<main>
+	<section class="experience u-bg--purple section sectionParial pullLeft ">
+		{% include icons/devices.svg %}
+		<h2>10+ Years of Experience</h2>
+		<p>For more than a decade I've been working and developing my craft non-stop. Previously I was working in Higher Education at Wiley Education Services creating better experiences for students learning online. Currently I'm doing all things front-end for the fine people at Switcher Studio.</p>
+		<p>In addition to my full time duties I also get inspired to learn new skills and techniques by making useful tool for web designers, free jekyll themes or something completely arbitrary. Every now and then I even entertain freelance work if it's the right fit. If you are interested send me a message.</p>
+	</section>
+	<section class="work section">
+		<div class="work__header">
+			<h2 class="u-text--purple">It's all about the work</h2>
+			<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+		</div>
+		<div class="work__main">
+			<picture> 
+				<source srcset="/assets/img/degrees-online.webp" type="image/webp" media="(min-width: 801px)">
+				<source srcset="/assets/img/degrees-online--sm.webp" type="image/webp" media="(max-width: 800px)">
+				<source srcset="/assets/img/degrees-online.jpg" type="image/jpeg" media="(min-width: 801px)">
+				<source srcset="/assets/img/degrees-online--sm.jpg" type="image/jpeg" media="(max-width: 800px)">
+				<img src="/assets/img/me.jpg" alt="Fine looking lad.">
+			</picture>
+		</div>
+	</section>
+	<section class="section sectionPartial pullLeft contact u-bg--purple">
+		<h2>Let's Make Something Together</h2>
+		<p>Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+		<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
+	</section>
+</main>
+<footer class="section">
+	<ul class="footerSocial socialLinks u-noList">
+		<li>
+			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together.">
+				{% include icons/envelope.svg %}
+			</a>
+		</li>
+		<li>
+			<a href="https://dribbble.com/brianmaierjr" target="_blank"
+				>{% include icons/dribbble.svg %}</a
+			>
+		</li>
+		<li>
+			<a href="https://github.com/brianmaierjr" target="_blank"
+				>{% include icons/github.svg %}</a
+			>
+		</li>
+		<li>
+			<a href="https://twitter.com/brianmaierjr" target="_blank"
+				>{% include icons/twitter.svg %}</a
+			>
+		</li>
+	</ul>
+	<div class="footerCopyright">
+		<p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Brian Maier Jr. If you are seeing this, you've gone too far. Photo by <a href="http://zeedeegee.squarespace.com/" target="_blank">ZDG</a></small></p>
+	</div>
+</footer>
+
