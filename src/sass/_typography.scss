@@ -2,10 +2,19 @@
 h1,
 .h1,
 h2,
-.h2 {
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: var(--font-barlow);
   margin-bottom: 1rem;
   margin-top: 0;
+  line-height: 1.3;
 }
 
 h1,
@@ -20,7 +29,13 @@ h2,
   line-height: var(--h2-line-height);
 }
 
-h1 .subheading {
+h3,
+.h3 {
+  font-size: var(--h3-font-size);
+}
+
+h1 .subheading,
+h2 .subheading {
   font-family: var(--font-hk-bold);
   font-weight: normal;
   text-transform: uppercase;

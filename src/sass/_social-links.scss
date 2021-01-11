@@ -9,6 +9,12 @@
 .socialLinks a:focus {
   color: white;
 }
+@media (prefers-color-scheme: light) {
+  .socialLinks a:hover,
+  .socialLinks a:focus {
+    color: var(--purple--dark);
+  }
+}
 .socialLinks svg {
   fill: currentColor;
   transition: 0.2s all ease-in-out;

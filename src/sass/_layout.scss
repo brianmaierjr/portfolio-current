@@ -1,6 +1,5 @@
 @media (min-width: 800px) {
-  .sectionSplit,
-  footer {
+  .sectionGrid {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
   }
@@ -24,5 +23,8 @@
   }
   .sectionPartial > * {
     grid-column: 3 / span 14;
+  }
+  .sectionContentFull {
+    grid-column: 8 / span 16;
   }
 }

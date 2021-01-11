@@ -21,6 +21,12 @@ body {
   padding-right: var(--mobile-padding);
   padding-left: var(--mobile-padding);
 }
+@media (min-width: 800px) {
+  .section.pullLeft {
+    padding-top: calc(var(--sp-section) * 0.6);
+    padding-bottom: calc(var(--sp-section) * 0.6);
+  }
+}
 ::selection {
   background-color: var(--green);
   color: var(--charcoal);
@@ -60,5 +66,14 @@ body {
     padding-right: 0;
   }
 }
+a {
+  color: currentColor;
+}
+a:not(.btn):hover,
+a:not(.btn):focus {
+  text-decoration: underline wavy currentColor;
+}
 
-// Light Theme
+hr {
+  width: 100%;
+}

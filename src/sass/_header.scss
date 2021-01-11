@@ -42,4 +42,9 @@ header .socialLinks li {
   .header__hero img {
     box-shadow: 1em 1em 0 0 var(--gray);
   }
+  @media (prefers-color-scheme: light) {
+    .header__hero img {
+      box-shadow: 1em 1em 0 0 white;
+    }
+  }
 }

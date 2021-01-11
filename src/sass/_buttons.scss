@@ -23,11 +23,27 @@
 }
 .btn__icon {
   margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.btn__icon svg {
+  fill: currentColor;
 }
 .btn--outline {
   background-color: transparent;
   border: 2px solid currentColor;
   color: var(--green);
+}
+@media (prefers-color-scheme: light) {
+  .btn--outline {
+    color: var(--purple);
+  }
+  .btn:hover,
+  .btn:hover,
+  .btn--outline:hover,
+  .btn--outline:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 .btn--outline:hover,
 .btn--outline:hover {

@@ -3,6 +3,15 @@ footer a {
   color: var(--green);
   text-decoration: none;
 }
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: light) {
+  footer a {
+    color: var(--purple);
+  }
+}
 footer .socialLinks li {
   margin-right: 1em;
 }
