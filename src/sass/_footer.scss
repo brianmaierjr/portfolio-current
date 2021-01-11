@@ -1,15 +1,14 @@
 // Footer
-footer {
-  display: flex;
-  flex-direction: column;
-}
 footer a {
   color: var(--green);
   text-decoration: none;
 }
-.footerSocial {
-  order: 2;
-}
 footer .socialLinks li {
   margin-right: 1em;
+}
+
+@media (min-width: 800px) {
+  .footer__content {
+    grid-column: 8 / span 16;
+  }
 }

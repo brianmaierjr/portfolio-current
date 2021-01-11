@@ -15,6 +15,11 @@
 .btn:hover,
 .btn:focus {
   background-color: white;
+  color: var(--purple);
+}
+.btn:hover .btn__icon,
+.btn:focus .btn__icon {
+  fill: currentColor;
 }
 .btn__icon {
   margin-right: 0.5em;
@@ -24,7 +29,11 @@
   border: 2px solid currentColor;
   color: var(--green);
 }
-
+.btn--outline:hover,
+.btn--outline:hover {
+  border: 2px solid white;
+  color: var(--purple);
+}
 .btnGroup .btn {
   margin: 0 1em 1em 0;
 }

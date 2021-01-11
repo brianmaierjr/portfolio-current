@@ -39,4 +39,7 @@ header .socialLinks li {
     margin-right: 0;
     margin-bottom: 1em;
   }
+  .header__hero img {
+    box-shadow: 1em 1em 0 0 var(--gray);
+  }
 }

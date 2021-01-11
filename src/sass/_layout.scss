@@ -1,10 +1,11 @@
 @media (min-width: 800px) {
-  .sectionSplit {
+  .sectionSplit,
+  footer {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
   }
   .sectionSplit__left {
-    grid-column: 3 / span 8;
+    grid-column: 3 / span 7;
   }
   .sectionSplit__right {
     grid-column: 12 / span 11;
