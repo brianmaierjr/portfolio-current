@@ -7,6 +7,14 @@ body {
   line-height: 1.5;
   border-left: 6px solid var(--purple);
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: var(--charcoal);
+  }
+}
+
 .section {
   padding-top: var(--sp-section);
   padding-bottom: var(--sp-section);
@@ -39,8 +47,18 @@ body {
     z-index: -1;
     border-radius: 0.5em;
   }
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+    }
+    body:before {
+      background-color: var(--gray--light);
+    }
+  }
   .section {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
+// Light Theme

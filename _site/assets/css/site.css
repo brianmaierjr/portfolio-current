@@ -20,6 +20,8 @@
 
 body { background-color: var(--charcoal); color: white; font-family: var(--font-hk-regular); font-size: var(--root-font-size); line-height: 1.5; border-left: 6px solid var(--purple); }
 
+@media (prefers-color-scheme: light) { body { background-color: white; color: var(--charcoal); } }
+
 .section { padding-top: var(--sp-section); padding-bottom: var(--sp-section); padding-right: var(--mobile-padding); padding-left: var(--mobile-padding); }
 
 ::selection { background-color: var(--green); color: var(--charcoal); }
@@ -27,8 +29,12 @@ body { background-color: var(--charcoal); color: white; font-family: var(--font-
 ::-moz-selection { background-color: var(--green); color: var(--charcoal); }
 
 @media (min-width: 800px) { body { background-color: var(--gray); border-left: none; position: relative; }
-  body:before { content: ""; background-color: var(--charcoal); display: block; width: 75%; height: 98%; position: absolute; top: 1%; right: 4.166%; z-index: -1; border-radius: 0.5em; }
-  .section { padding-left: 0; padding-right: 0; } }
+  body:before { content: ""; background-color: var(--charcoal); display: block; width: 75%; height: 98%; position: absolute; top: 1%; right: 4.166%; z-index: -1; border-radius: 0.5em; } }
+
+@media (min-width: 800px) and (prefers-color-scheme: light) { body { background-color: white; }
+  body:before { background-color: var(--gray--light); } }
+
+@media (min-width: 800px) { .section { padding-left: 0; padding-right: 0; } }
 
 h1, .h1, h2, .h2 { font-family: var(--font-barlow); margin-bottom: 1rem; margin-top: 0; }
 
@@ -37,6 +43,8 @@ h1, .h1 { font-size: var(--h1-font-size); line-height: var(--h1-line-height); }
 h2, .h2 { font-size: var(--h2-font-size); line-height: var(--h2-line-height); }
 
 h1 .subheading { font-family: var(--font-hk-bold); font-weight: normal; text-transform: uppercase; font-size: var(--subheading-font-size); color: var(--gray--light); letter-spacing: 1px; }
+
+@media (prefers-color-scheme: light) { h1 .subheading { color: var(--gray); } }
 
 p { margin-top: 0; margin-bottom: 2rem; max-width: 800px; }
 
@@ -101,7 +109,9 @@ footer a { color: var(--green); text-decoration: none; }
 
 footer .socialLinks li { margin-right: 1em; }
 
-.u-bg--purple { background-color: var(--purple); }
+.u-bg--purple { background-color: var(--purple); color: white; }
+
+@media (prefers-color-scheme: light) { .u-bg--purple { box-shadow: 1em 1em 0 0 white; } }
 
 .u-text--purple { color: var(--purple); }
 

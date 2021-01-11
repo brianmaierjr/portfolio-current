@@ -28,6 +28,11 @@ h1 .subheading {
   color: var(--gray--light);
   letter-spacing: 1px;
 }
+@media (prefers-color-scheme: light) {
+  h1 .subheading {
+    color: var(--gray);
+  }
+}
 
 p {
   margin-top: 0;

@@ -1,6 +1,12 @@
 // Utility
 .u-bg--purple {
   background-color: var(--purple);
+  color: white;
+}
+@media (prefers-color-scheme: light) {
+  .u-bg--purple {
+    box-shadow: 1em 1em 0 0 white;
+  }
 }
 
 .u-text--purple {
