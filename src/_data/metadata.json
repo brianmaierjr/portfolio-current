@@ -1,20 +1,20 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Brian Maier Jr.",
+  "url": "https://brianmaierjr.com/",
+  "description": "UI/UX Designer & Front-end Developer",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "UI/UX Designer & Front-end Developer",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://brianmaierjr.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://brianmaierjr.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Brian Maier Jr.",
+    "email": "brianmaierjr@gmail.com",
+    "url": "https://brianmaierjr.com/"
   }
 }

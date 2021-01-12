@@ -15,9 +15,11 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes",
       layouts: "_layouts"
-    } 
+    },
+    pathPrefix: "/portfolio2021/"  
   };
 };
+
 
 function extractExcerpt(article) {
   if (!article.hasOwnProperty('templateContent')) {
