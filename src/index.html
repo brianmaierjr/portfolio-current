@@ -20,13 +20,13 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 		</h1>
 		<p>I specialize in building unique digital experiences that delight users, benefit companies, and make better products.</p>
 		<div class="btnGroup">
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
+			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn" target="_blank"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
 			<a href="#work" class="btn btn--outline scroll"><span class="btn__icon">{% include icons/eye.svg %}</span> View My Work</a>
 		</div>
 	</div>
 	<ul class="headerSocial socialLinks u-noList"> 
 		<li>
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together.">
+			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." target="_blank">
 				{% include icons/envelope.svg %}
 			</a>
 		</li>
@@ -51,7 +51,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 	<section class="experience u-bg--purple section sectionPartial pullLeft">
 		{% include icons/devices.svg %}
 		<h2>10+ Years of Experience</h2>
-		<p>I have over a decade of experience crafting experiences for users that make the web a better and more beautiful place. Currently I'm doing all things front-end for the fantastic folks at <a href="https://switcherstudio.com">Switcher Studio</a> in Louisville, Kentucky.</p>
+		<p>I have over a decade of experience crafting experiences for users that make the web a better and more beautiful place. Currently I'm doing all things front-end for the fantastic folks at <a href="https://switcherstudio.com" target="_blank">Switcher Studio</a> in Louisville, Kentucky.</p>
 		<p>Every now and then I entertain freelance work if it's the right fit. If you think I'd be good for your product, please feel free to <a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together.">reach out</a>.</p>
 		<!-- 
 		<div class="sideProjects">
@@ -96,15 +96,29 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 				<source srcset="{{ 'assets/img/degrees-online--sm.webp' | url }}" type="image/webp" media="(max-width: 800px)">
 				<source srcset="{{ 'assets/img/degrees-online.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
 				<source srcset="{{ 'assets/img/degrees-online--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-				<img src="{{ 'assets/img/me.jpg' | url }}" alt="Fine looking lad.">
+				<img src="{{ 'assets/img/degrees-online.jpg' | url }}" alt="DegreesOnline.com Website">
+			</picture>
+			<picture> 
+				<source srcset="{{ 'assets/img/oyl.webp' | url }}" type="image/webp" media="(min-width: 801px)">
+				<source srcset="{{ 'assets/img/oyl--sm.webp' | url }}" type="image/webp" media="(max-width: 800px)">
+				<source srcset="{{ 'assets/img/oyl.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
+				<source srcset="{{ 'assets/img/oyl--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
+				<img src="{{ 'assets/img/oyl.jpg' | url }}" alt="On Your Left Cycles Website">
+			</picture>
+			<picture> 
+				<source srcset="{{ 'assets/img/shawnee.webp' | url }}" type="image/webp" media="(min-width: 801px)">
+				<source srcset="{{ 'assets/img/shawnee--sm.webp' | url }}" type="image/webp" media="(max-width: 800px)">
+				<source srcset="{{ 'assets/img/shawnee.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
+				<source srcset="{{ 'assets/img/shawnee--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
+				<img src="{{ 'assets/img/shawnee.jpg' | url }}" alt="Shawnee University Online Website">
 			</picture>
 		</div>
 	</section>
 	<section class="contact section sectionPartial pullLeft u-bg--purple"> 
 		<div class="contact__content">
 			<h2>Let's Make Something Together</h2>
-			<p>Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
+			<p>Get in touch with me to talk about whatever project you have on the horizon. Even if I'm not a good fit I can help point you in the right direction. I can also be found doing work with the amazing creatives at <a href="https://etherblk.com" target="_blank">Etherblack Industries</a> where we offer even more services!</p>
+			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn" target="_blank"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
 		</div> 
 	</section>
 </main>

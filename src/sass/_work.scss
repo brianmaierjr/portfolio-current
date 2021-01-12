@@ -1,3 +1,7 @@
+.work__main picture {
+  margin-bottom: 2em;
+}
+
 @media (min-width: 800px) {
   .work {
     display: grid;
@@ -11,5 +15,8 @@
   }
   .work__main img {
     width: 100%;
+  }
+  .work__main picture {
+    margin-bottom: 4em;
   }
 }
