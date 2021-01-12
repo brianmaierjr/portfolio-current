@@ -5,7 +5,8 @@
   --gray--light: #efefefe3;
   --charcoal: #141414;
   --purple: #6d55f5;
-  --purple--dark: #201d34;
+  --purple--dark: #4b3ba5;
+  --purple--darker: #201d34;
   --green: #a2d90a;
   // Spacing
   --sp-sm: 1em;
@@ -16,11 +17,12 @@
   --root-font-size: 18px;
   --root-line-height: 1.45;
   --subheading-font-size: 0.4em;
-  --h1-font-size: 2.5em;
+  --h1-font-size: 2.5em; // 45px 56px 70px
   --h1-line-height: 1.1;
-  --h2-font-size: 2.22em;
+  --h2-font-size: 2.22em; // 40px 48px  64px
   --h2-line-height: 1.22;
-  --h3-font-size: 1.9em;
+  --h3-font-size: 2em; // 36px 32px 48px
+  --h4-font-size: 1.6em; // 30px
   --font-hk-regular: "hk_groteskregular", sans-serif;
   --font-hk-italic: "hk_groteskitalic", sans-serif;
   --font-hk-bold: "hk_groteskbold", sans-serif;
@@ -32,10 +34,9 @@
   :root {
     --root-font-size: 20px;
     --root-line-height: 1.55;
-    --h1-font-size: 2.25em;
-    --h1-line-height: 1.05;
-    --h2-font-size: 2em;
-    --h3-font-size: 1.6em;
+    --h1-font-size: 2.8em; // 56px
+    --h2-font-size: 2.4em; // 48px
+    --h3-font-size: 1.6em; // 32px
     --sp-section: 5em;
   }
 }
@@ -43,10 +44,10 @@
 @media (min-width: 1240px) {
   :root {
     --sp-section: 10em;
-    --h1-font-size: 3.5em;
+    --h1-font-size: 3.5em; // 70px
     --h1-line-height: 1.05;
-    --h2-font-size: 3.2em;
-    --h3-font-size: 2.4em;
+    --h2-font-size: 3.2em; // 64px
+    --h3-font-size: 2.4em; // 48px
 
     --subheading-font-size: 0.3em;
   }

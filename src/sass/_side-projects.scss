@@ -1,0 +1,30 @@
+.sideProject {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--purple--dark);
+  margin-bottom: 2em;
+}
+.sideProject__img {
+  max-height: 10em;
+  object-fit: cover;
+}
+.sideProject__content {
+  padding: 1em;
+}
+.sideProject__content > *:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+  .sideProjects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sideProject {
+    width: 47.5%;
+    margin-right: 2.5%;
+  }
+  .sideProject__img {
+    max-height: auto;
+  }
+}
