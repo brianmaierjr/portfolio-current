@@ -11,11 +11,13 @@
   align-items: center;
   transition: 0.2s all ease-in-out;
   font-size: 1.2rem;
+  border: 2px solid var(--green);
 }
 .btn:hover,
 .btn:focus {
   background-color: white;
   color: var(--purple);
+  border-color: white;
 }
 .btn:hover .btn__icon,
 .btn:focus .btn__icon {
@@ -25,9 +27,13 @@
   margin-right: 0.5em;
   display: flex;
   align-items: center;
+  height: 1.2em;
+  width: 1.2em;
 }
 .btn__icon svg {
   fill: currentColor;
+  width: 100%;
+  height: auto;
 }
 .btn--outline {
   background-color: transparent;
