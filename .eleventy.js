@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts"
     },
-    pathPrefix: "/portfolio2021/"  
+    // pathPrefix: "/portfolio2021/"  
   };
 };
 
