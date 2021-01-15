@@ -49,3 +49,9 @@ header .socialLinks li {
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .header__hero .tilt {
+    min-height: 40em;
+  }
+}
