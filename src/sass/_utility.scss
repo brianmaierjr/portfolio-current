@@ -5,7 +5,7 @@
 }
 @media (prefers-color-scheme: light) {
   .u-bg--purple {
-    box-shadow: 1em 1em 0 0 white;
+    box-shadow: var(--mouse-x) var(--mouse-y) 0 0 white;
   }
 }
 

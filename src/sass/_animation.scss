@@ -1,0 +1,8 @@
+:root {
+  --mouse-x: 0;
+  --mouse-y: 0;
+}
+
+.pointer {
+  transform: translate(var(--mouse-x), var(--mouse-y));
+}

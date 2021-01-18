@@ -29,6 +29,8 @@
   --font-hk-bold-italic: "hk_groteskbold_italic", sans-serif;
   --font-barlow: "Barlow", sans-serif;
   --mobile-padding: 30px;
+  --mouse-x: 0;
+  --mouse-y: 0;
 }
 @media (min-width: 800px) {
   :root {
