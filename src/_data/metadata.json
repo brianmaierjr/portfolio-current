@@ -1,7 +1,11 @@
 {
-  "title": "Brian Maier Jr.",
+  "title": "Brian Maier Jr. Portfolio",
   "url": "https://brianmaierjr.com/",
   "description": "UI/UX Designer & Front-end Developer",
+  "url": "https://brianmaierjr.com",
+  "social": {
+    "twitter": "brianmaierjr"
+  },
   "feed": {
     "subtitle": "UI/UX Designer & Front-end Developer",
     "filename": "feed.xml",

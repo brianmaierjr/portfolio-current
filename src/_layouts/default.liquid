@@ -1,7 +1,3 @@
----
-title: My Rad Blog
----
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -14,10 +10,64 @@ title: My Rad Blog
     <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | url }}" color="#6d55f5">
     <meta name="msapplication-TileColor" content="#6d55f5">
     <meta name="theme-color" content="#141414">
+
+    <!-- Open Graph Meta -->
+    <meta content="{{ metadata.title }}" property="og:site_name">
+    {%- if title %}
+    <meta content="{{ title }}" property="og:title">
+    {%- else %}
+    <meta content="{{ metadata.title }}" property="og:title">
+    {%- endif %}
+    <meta content="website" property="og:type">
+    {%- if description %}
+    <meta content="{{ description }}" property="og:description">
+    {%- else %}
+    <meta content="{{ metadata.description }}" property="og:description">
+    {%- endif %}
+    {%- if metadata.url %}
+    <meta content="{{ metadata.url }}{{ url }}" property="og:url">
+    {%- endif %}
+    {%- if date %}
+    <meta content="{{ date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{ metadata.url }}/about/" property="article:author">
+    {%- endif %}
+    {%- if image %}
+    <meta content="{{ metadata.url }}/assets/img/{{ image }}" property="og:image">
+    {%- else %}
+    <meta content="{{ '/assets/img/social.jpg' | prepend: metadata.url }}" property="og:image">
+    {%- endif %}
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ metadata.social.twitter }}">
+    <meta name="twitter:creator" content="@{{ metadata.social.twitter }}">
+    {%- if title %}
+    <meta name="twitter:title" content="{{ title }}">
+    {%- else %}
+    <meta name="twitter:title" content="{{ metadata.title }}">
+    {%- endif %}
+    {%- if url %}
+    <meta name="twitter:url" content="{{ metadata.url }}{{ url }}">
+    {%- endif %}
+    {%- if description %}
+    <meta name="twitter:description" content="{{ description }}">
+    {%- else %}
+    <meta name="twitter:description" content="{{ metadata.description }}">
+    {%- endif %}
+    {%- if image %}
+    <meta name="twitter:image:src" content="{{ metadata.url }}/assets/img/{{ image }}">
+    {%- else %}
+    <meta name="twitter:image:src" content="{{ '/assets/img/social.jpg' | prepend: metadata.url }}">
+    {%- endif %}
+    {% if title %}
     <title>{{ title }}</title>
+    {%- else %}
+    <title>{{ metadata.title }}</title>
+    {%- endif %}
     <link href="{{ '/assets/css/site.css' | url }}" rel="stylesheet" /> 
   </head>
   <body>
     {{ content | safe }}
+    {% include footer.html %}
   </body>
 </html>
