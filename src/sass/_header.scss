@@ -22,10 +22,10 @@ header .socialLinks li {
 }
 
 @media (min-width: 800px) {
-  .header__hero {
+  .header__hero picture {
     position: relative;
   }
-  .header__hero:before {
+  .header__hero picture:before {
     content: "";
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@ header .socialLinks li {
     transform: translate(var(--mouse-x), var(--mouse-y));
     mix-blend-mode: soft-light;
   }
-  .header__hero:after {
+  .header__hero picture:after {
     content: "";
     position: absolute;
     top: 0;
@@ -52,6 +52,7 @@ header .socialLinks li {
   header.section {
     padding-left: 0;
     padding-right: 0;
+    align-items: center;
   }
   header .socialLinks {
     flex-direction: column;

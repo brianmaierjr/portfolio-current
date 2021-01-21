@@ -19,7 +19,7 @@
     width: 75%;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
-    box-shadow: var(--mouse-x) var(--mouse-y) 0 0 var(--gray);
+    box-shadow: 1em 1em 0 0 var(--gray);
   }
   .sectionPartial > * {
     grid-column: 3 / span 14;
