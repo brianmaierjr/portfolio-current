@@ -1,0 +1,8 @@
+@mixin lightMode() {
+  @media (prefers-color-scheme: light) {
+    @content;
+  }
+  html.theme-light & {
+    @content;
+  }
+}

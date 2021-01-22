@@ -32,6 +32,12 @@
   --mobile-padding: 30px;
   --mouse-x: 0;
   --mouse-y: 0;
+  // Dark Theme
+  --body-bg: var(--gray);
+
+  &.theme-light {
+    --body-bg: white;
+  }
 }
 @media (min-width: 800px) {
   :root {

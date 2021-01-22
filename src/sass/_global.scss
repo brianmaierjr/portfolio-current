@@ -1,6 +1,6 @@
 // Global
 body {
-  background-color: var(--charcoal);
+  background-color: var(--body-bg);
   color: white;
   font-family: var(--font-hk-regular);
   font-size: var(--root-font-size);
@@ -37,7 +37,7 @@ body {
 }
 @media (min-width: 800px) {
   body {
-    background-color: var(--gray);
+    background-color: var(--body-bg);
     border-left: none;
     position: relative;
   }
