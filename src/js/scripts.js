@@ -1,16 +1,16 @@
 document.documentElement.classList.remove('no-js');
 
 const links = document.querySelectorAll("a.scroll");
- 
+
 for (const link of links) {
   link.addEventListener("click", clickHandler);
 }
- 
+
 function clickHandler(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
   const offsetTop = document.querySelector(href).offsetTop;
- 
+
   scroll({
     top: offsetTop,
     behavior: "smooth"
@@ -21,9 +21,9 @@ function clickHandler(e) {
 
 (function () {
   const safeToAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
-  
- if (!safeToAnimate) return;
-  
+
+  if (!safeToAnimate) return;
+
   let xPosition;
   let yPosition;
 
@@ -40,7 +40,7 @@ function clickHandler(e) {
   // update the CSS vars within request animation frame
   function movePointer() {
     window.requestAnimationFrame(movePointer);
-  
+
     // important, only recalculating if the value changes
     if (storedXPosition === xPosition && storedYPosition === yPosition) return;
 
@@ -60,7 +60,7 @@ function clickHandler(e) {
 
   // updating the mouse coordinates
   function updateMouseCoords(event) {
-    xPosition = event.clientX; 
+    xPosition = event.clientX;
     yPosition = event.clientY;
   }
   window.addEventListener("mousemove", updateMouseCoords);
