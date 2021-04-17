@@ -19,13 +19,13 @@ h6,
 
 h1,
 .h1 {
-  font-size: clamp(2.5em, 6vw, 7em); 
+  font-size: clamp(2.5em, 6vw, 5em); 
   line-height: var(--h1-line-height);
 }
 
 h2,
 .h2 {
-  font-size: clamp(2.2em, 4vw, 5em); 
+  font-size: clamp(2.2em,3vw, 4.5em); 
   line-height: var(--h2-line-height);
 }
 
