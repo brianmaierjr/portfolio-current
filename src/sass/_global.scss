@@ -3,7 +3,7 @@ body {
   background-color: var(--body-bg);
   color: white;
   font-family: var(--font-hk-regular);
-  font-size: var(--root-font-size);
+  font-size: clamp(1em, 3vw, 1.5em); 
   line-height: 1.5;
   border-left: 6px solid var(--purple);
 }

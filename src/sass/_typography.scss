@@ -19,13 +19,13 @@ h6,
 
 h1,
 .h1 {
-  font-size: var(--h1-font-size);
+  font-size: clamp(2.5em, 6vw, 7em); 
   line-height: var(--h1-line-height);
 }
 
 h2,
 .h2 {
-  font-size: var(--h2-font-size);
+  font-size: clamp(2.2em, 4vw, 5em); 
   line-height: var(--h2-line-height);
 }
 
@@ -44,7 +44,7 @@ h2 .subheading {
   font-family: var(--font-hk-bold);
   font-weight: normal;
   text-transform: uppercase;
-  font-size: var(--subheading-font-size);
+  font-size: .3em; 
   color: var(--gray--light);
   letter-spacing: 1px;
 }
