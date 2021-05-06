@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({'src/fonts': 'assets/fonts'});
   eleventyConfig.addPassthroughCopy({'src/js': 'assets/js'});
   eleventyConfig.addPassthroughCopy({'src/favicon': './'});
+  eleventyConfig.addPassthroughCopy('src/_redirects');
   eleventyConfig.setBrowserSyncConfig({
     files: ['_site/assets/css/*.css']
   });
