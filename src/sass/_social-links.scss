@@ -2,8 +2,15 @@
 .socialLinks {
   display: flex;
 }
+.socialLinks li {
+  display: flex;
+}
 .socialLinks a {
-  color: var(--purple);
+  color: var(--purple); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .socialLinks a:hover,
 .socialLinks a:focus {
