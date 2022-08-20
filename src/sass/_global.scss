@@ -1,9 +1,14 @@
 // Global
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body-bg);
   color: white;
   font-family: var(--font-hk-regular);
-  font-size: clamp(1.125em, 2vw, 1.5em); 
+  font-size: clamp(1.125em, 2vw, 1.5em);
   line-height: 1.5;
   border-left: 6px solid var(--purple);
 }
@@ -21,26 +26,31 @@ body {
   padding-right: var(--mobile-padding);
   padding-left: var(--mobile-padding);
 }
+
 @media (min-width: 800px) {
   .section.pullLeft {
     padding-top: calc(var(--sp-section) * 0.6);
     padding-bottom: calc(var(--sp-section) * 0.6);
   }
 }
+
 ::selection {
   background-color: var(--green);
   color: var(--charcoal);
 }
+
 ::-moz-selection {
   background-color: var(--green);
   color: var(--charcoal);
 }
+
 @media (min-width: 800px) {
   body {
     background-color: var(--body-bg);
     border-left: none;
     position: relative;
   }
+
   body:before {
     content: "";
     background-color: var(--charcoal);
@@ -53,22 +63,27 @@ body {
     z-index: -1;
     border-radius: 0.5em;
   }
+
   @media (prefers-color-scheme: light) {
     body {
       background-color: white;
     }
+
     body:before {
       background-color: var(--gray--light);
     }
   }
+
   .section {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
 a {
   color: currentColor;
 }
+
 a:not(.btn):hover,
 a:not(.btn):focus {
   text-decoration: underline wavy currentColor;

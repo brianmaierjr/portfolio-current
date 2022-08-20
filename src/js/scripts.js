@@ -1,24 +1,55 @@
 document.documentElement.classList.remove('no-js');
 
-const links = document.querySelectorAll("a.scroll");
+// Dribbble Shots
+// Set the Access Token
+const accessToken = 'b98531775d248352b438142499ec464af36850fcf100ccf52c738c1ab21f3247';
+const dribble_url = 'https://api.dribbble.com/v2/user/shots?access_token=' + accessToken;
 
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
 
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+getShots().catch(error => {
+  console.log(error);
+});;
 
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
+async function getShots() {
+  let response = await fetch(dribble_url);
+  let data = await response.json();
+  console.log(data);
+
+
+  data.forEach(function (shot) {
+    const target = document.getElementById('shots');
+    console.log(shot.html_url);
+    console.log(shot.images.hidpi);
+    const div = document.createElement('div');
+    div.classList.add('shot');
+    div.innerHTML =
+      '<a href="' + shot.html_url + '" target="_blank"><img src="' + shot.images.hidpi + '" alt="' + shot.title + '" loading="lazy"></a>';
+    target.append(div)
   });
+
 }
+
+// Call Dribble v2 API
+// $.ajax({
+//   url: 'https://api.dribbble.com/v2/user/shots?access_token=' + accessToken,
+//   dataType: 'json',
+//   type: 'GET',
+//   success: function (data) {
+//     if (data.length > 0) {
+//       $.each(data.reverse(), function (i, val) {
+//         $('#shots').prepend(
+//           '<a class="shot" target="_blank" href="' + val.html_url + '" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></a>'
+//         )
+//       })
+//     }
+//     else {
+//       $('#shots').append('<p>No shots yet!</p>');
+//     }
+//   }
+// });
+
 
 // Animate box-shadow
-
 (function () {
   const safeToAnimate = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
