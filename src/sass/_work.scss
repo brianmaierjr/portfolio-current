@@ -40,3 +40,12 @@
     // gap: var(--sp-lg);
   }
 }
+
+.shot {
+  transition: .2s all ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+}
