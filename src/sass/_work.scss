@@ -32,12 +32,10 @@
 
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
-    gap: var(--sp-md);
   }
 
-  @media (min-width: 1240px) {
+  @media (min-width: 1800px) {
     grid-template-columns: 1fr 1fr 1fr;
-    // gap: var(--sp-lg);
   }
 }
 
