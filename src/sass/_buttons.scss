@@ -1,6 +1,6 @@
 // Buttons
 .btn {
-  background-color: var(--green);
+  background-color: var(--secondary);
   color: var(--charcoal);
   padding: 0.5em 1.5em 0.6em;
   text-decoration: none;
@@ -11,14 +11,14 @@
   align-items: center;
   transition: 0.2s all ease-in-out;
   font-size: 1em;
-  border: 2px solid var(--green);
+  border: 2px solid var(--secondary);
 }
 
 .btn:hover,
 .btn:focus {
   background-color: white;
-  color: var(--purple);
-  border-color: white;
+  color: var(--primary);
+  border-color: var(--white);
 }
 
 .btn:hover .btn__icon,
@@ -43,12 +43,12 @@
 .btn--outline {
   background-color: transparent;
   border: 2px solid currentColor;
-  color: var(--green);
+  color: var(--secondary);
 }
 
-@media (prefers-color-scheme: light) {
+html[color-mode="light"] {
   .btn--outline {
-    color: var(--purple);
+    color: var(--primary);
   }
 
   .btn:hover,
@@ -59,12 +59,56 @@
   }
 }
 
+// @media (prefers-color-scheme: light) {
+//   .btn--outline {
+//     color: var(--purple);
+//   }
+
+//   .btn:hover,
+//   .btn:hover,
+//   .btn--outline:hover,
+//   .btn--outline:hover {
+//     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+//   }
+// }
+
 .btn--outline:hover,
 .btn--outline:hover {
-  border: 2px solid white;
-  color: var(--purple);
+  border: 2px solid var(--white);
+  color: var(--primary);
 }
 
 .btnGroup .btn {
   margin: 0 1em 1em 0;
+}
+
+
+
+// Color Mode Buttons
+
+.color-mode__btn {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  padding: .2em;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: 800px) {
+    top: 6vw;
+    right: 6vw;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.light--hidden {}
+
+  &.dark--hidden {}
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

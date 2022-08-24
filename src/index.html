@@ -4,6 +4,17 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 ---
 
 <header class="section sectionSplit sectionGrid">
+
+	<!--- Light mode button --->
+	<button class="color-mode__btn light--hidden" aria-label="Toggle light mode">
+		<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="yellow" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="60" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="128" y1="36" x2="128" y2="16" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="62.9" y1="62.9" x2="48.8" y2="48.8" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="36" y1="128" x2="16" y2="128" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="62.9" y1="193.1" x2="48.8" y2="207.2" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="220" x2="128" y2="240" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="193.1" y1="193.1" x2="207.2" y2="207.2" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="220" y1="128" x2="240" y2="128" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="193.1" y1="62.9" x2="207.2" y2="48.8" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+	</button>
+
+	<!--- Dark mode button --->
+	<button class="color-mode__btn dark--hidden" aria-label="Toggle dark mode">
+		<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#6d55f5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+	</button>
+
 	<div class="header__hero sectionSplit__left">
 		<picture> 
 			<source srcset="{{ 'assets/img/me.avif' | url }}" type="image/avif" media="(min-width: 801px)">
@@ -18,7 +29,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 			<span class="subheading">Brian Maier Jr.</span><br>
 			UI/UX Designer &amp; Front-end Developer
 		</h1>
-		<p>I specialize in building unique digital experiences that delight users, benefit companies, and make better products.</p>
+		<p>Just trying to earn a living by making cool shit that people enjoy. Thanks for stopping by.</p>
 		<div class="btnGroup">
 			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn" target="_blank"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
 			<a href="#work" class="btn btn--outline scroll"><span class="btn__icon">{% include icons/eye.svg %}</span> View My Work</a>

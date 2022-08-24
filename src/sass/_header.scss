@@ -15,6 +15,10 @@ header:hover {
   cursor: url(../img/arrow-down.svg), auto;
 }
 
+html[color-mode="light"] header:hover {
+  cursor: url(../img/arrow-down-dark.svg), auto;
+}
+
 @media (max-width: 799px) {
   .header__hero {
     border-radius: 50%;
@@ -46,7 +50,7 @@ header:hover {
     mix-blend-mode: soft-light;
   }
 
-  @media (prefers-color-scheme: light) {
+  html[color-mode="light"] {
     .header__hero picture:before {
       mix-blend-mode: hard-light;
       opacity: 0.4;
@@ -60,7 +64,7 @@ header:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--purple);
+    background-color: var(--primary);
     z-index: -1;
     transform: translate(var(--mouse-y), var(--mouse-x));
     // mix-blend-mode: hard-light;
@@ -93,10 +97,10 @@ header:hover {
   .header__hero .tilt {
     box-shadow: var(--mouse-x) var(--mouse-y) 0 0 var(--gray);
   }
+}
 
-  @media (prefers-color-scheme: light) {
-    .header__hero img {
-      box-shadow: var(--mouse-x) var(--mouse-y) 0 0 white;
-    }
+html[color-mode="light"] {
+  .header__hero img {
+    box-shadow: var(--mouse-x) var(--mouse-y) 0 0 white;
   }
 }

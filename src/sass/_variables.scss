@@ -1,6 +1,5 @@
 // Variables
 :root {
-  --color-mode: "dark";
   // Colors
   --gray: #1d1d1d;
   --gray--light: #efefefe3;
@@ -9,6 +8,28 @@
   --purple--dark: #4b3ba5;
   --purple--darker: #201d34;
   --green: #a2d90a;
+  --white: #ffffff;
+
+  &[color-mode="light"] {
+    --surface1: var(--white);
+    --surface2: var(--gray--light);
+    --primary: var(--purple);
+    --secondary: var(--green);
+    --text-color: var(--charcoal);
+    --text-color-alt: var(--gray);
+    --footer-link: var(--purple);
+  }
+
+  &[color-mode="dark"] {
+    --surface1: var(--gray);
+    --surface2: var(--charcoal);
+    --primary: var(--purple);
+    --secondary: var(--green);
+    --text-color: var(--white);
+    --text-color-alt: var(--gray--light);
+    --footer-link: var(--green);
+  }
+
   // Spacing
   --sp-sm: 1em;
   --sp-md: 2em;
@@ -21,21 +42,21 @@
   --h2-line-height: 1.22;
   --h3-font-size: 2em; // 36px 32px 48px
   --h4-font-size: 1.6em; // 30px
-  --font-hk-regular: "hk_groteskregular", sans-serif;
-  --font-hk-italic: "hk_groteskitalic", sans-serif;
-  --font-hk-bold: "hk_groteskbold", sans-serif;
-  --font-hk-bold-italic: "hk_groteskbold_italic", sans-serif;
-  --font-barlow: "Barlow", sans-serif;
+  --font-hk-regular: "hk_groteskregular",
+  sans-serif;
+  --font-hk-italic: "hk_groteskitalic",
+  sans-serif;
+  --font-hk-bold: "hk_groteskbold",
+  sans-serif;
+  --font-hk-bold-italic: "hk_groteskbold_italic",
+  sans-serif;
+  --font-barlow: "Barlow",
+  sans-serif;
   --mobile-padding: 30px;
   --mouse-x: 0;
   --mouse-y: 0;
-  // Dark Theme
-  --body-bg: var(--gray);
-
-  &.theme-light {
-    --body-bg: white;
-  }
 }
+
 @media (min-width: 800px) {
   :root {
     --root-line-height: 1.55;

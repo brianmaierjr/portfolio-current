@@ -19,13 +19,13 @@ h6,
 
 h1,
 .h1 {
-  font-size: clamp(2.5em, 6vw, 5em); 
+  font-size: clamp(2.5em, 6vw, 5em);
   line-height: var(--h1-line-height);
 }
 
 h2,
 .h2 {
-  font-size: clamp(2.2em,3vw, 4.5em); 
+  font-size: clamp(2.2em, 3vw, 4.5em);
   line-height: var(--h2-line-height);
 }
 
@@ -44,15 +44,16 @@ h2 .subheading {
   font-family: var(--font-hk-bold);
   font-weight: normal;
   text-transform: uppercase;
-  font-size: .3em; 
-  color: var(--gray--light);
+  font-size: .3em;
+  color: var(--text-color-alt);
   letter-spacing: 1px;
 }
-@media (prefers-color-scheme: light) {
-  h1 .subheading {
-    color: var(--gray);
-  }
-}
+
+// @media (prefers-color-scheme: light) {
+//   h1 .subheading {
+//     color: var(--gray);
+//   }
+// }
 
 p {
   margin-top: 0;

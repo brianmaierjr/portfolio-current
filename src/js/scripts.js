@@ -5,7 +5,6 @@ document.documentElement.classList.remove('no-js');
 const accessToken = 'b98531775d248352b438142499ec464af36850fcf100ccf52c738c1ab21f3247';
 const dribble_url = 'https://api.dribbble.com/v2/user/shots?access_token=' + accessToken;
 
-
 getShots().catch(error => {
   console.log(error);
 });;
@@ -28,26 +27,6 @@ async function getShots() {
   });
 
 }
-
-// Call Dribble v2 API
-// $.ajax({
-//   url: 'https://api.dribbble.com/v2/user/shots?access_token=' + accessToken,
-//   dataType: 'json',
-//   type: 'GET',
-//   success: function (data) {
-//     if (data.length > 0) {
-//       $.each(data.reverse(), function (i, val) {
-//         $('#shots').prepend(
-//           '<a class="shot" target="_blank" href="' + val.html_url + '" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="' + val.images.hidpi + '"/></a>'
-//         )
-//       })
-//     }
-//     else {
-//       $('#shots').append('<p>No shots yet!</p>');
-//     }
-//   }
-// });
-
 
 // Animate box-shadow
 (function () {
@@ -103,3 +82,32 @@ async function getShots() {
   }
   window.addEventListener("resize", updateWindowSize);
 })();
+
+
+if (window.CSS && CSS.supports("color", "var(--primary)")) {
+  var toggleColorMode = function toggleColorMode(e) {
+    // Switch to Light Mode
+    if (e.currentTarget.classList.contains("light--hidden")) {
+      // Sets the custom html attribute
+      document.documentElement.setAttribute("color-mode", "light"); // Sets the user's preference in local storage
+
+      localStorage.setItem("color-mode", "light");
+      return;
+    }
+    /* Switch to Dark Mode
+    Sets the custom html attribute */
+    document.documentElement.setAttribute("color-mode", "dark"); // Sets the user's preference in local storage
+
+    localStorage.setItem("color-mode", "dark");
+  }; // Get the buttons in the DOM
+
+  var toggleColorButtons = document.querySelectorAll(".color-mode__btn"); // Set up event listeners
+
+  toggleColorButtons.forEach(function (btn) {
+    btn.addEventListener("click", toggleColorMode);
+  });
+} else {
+  // If the feature isn't supported, then we hide the toggle buttons
+  var btnContainer = document.querySelector(".color-mode__header");
+  btnContainer.style.display = "none";
+}

@@ -5,20 +5,20 @@ html {
 }
 
 body {
-  background-color: var(--body-bg);
-  color: white;
+  background-color: var(--surface1);
+  color: var(--text-color);
   font-family: var(--font-hk-regular);
   font-size: clamp(1.125em, 2vw, 1.5em);
   line-height: 1.5;
-  border-left: 6px solid var(--purple);
+  border-left: 6px solid var(--primary);
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: var(--charcoal);
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   body {
+//     background-color: white;
+//     color: var(--charcoal);
+//   }
+// }
 
 .section {
   padding-top: var(--sp-section);
@@ -35,25 +35,25 @@ body {
 }
 
 ::selection {
-  background-color: var(--green);
-  color: var(--charcoal);
+  background-color: var(--secondary);
+  color: var(--surface2);
 }
 
 ::-moz-selection {
-  background-color: var(--green);
-  color: var(--charcoal);
+  background-color: var(--secondary);
+  color: var(--surface2);
 }
 
 @media (min-width: 800px) {
   body {
-    background-color: var(--body-bg);
+    background-color: var(--surface1);
     border-left: none;
     position: relative;
   }
 
   body:before {
     content: "";
-    background-color: var(--charcoal);
+    background-color: var(--surface2);
     display: block;
     width: 75%;
     height: 98%;
@@ -64,15 +64,15 @@ body {
     border-radius: 0.5em;
   }
 
-  @media (prefers-color-scheme: light) {
-    body {
-      background-color: white;
-    }
+  // @media (prefers-color-scheme: light) {
+  //   body {
+  //     background-color: white;
+  //   }
 
-    body:before {
-      background-color: var(--gray--light);
-    }
-  }
+  //   body:before {
+  //     background-color: var(--gray--light);
+  //   }
+  // }
 
   .section {
     padding-left: 0;
@@ -100,4 +100,14 @@ hr {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode="light"] .light--hidden {
+  display: none;
+}
+
+/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode="dark"] .dark--hidden {
+  display: none;
 }

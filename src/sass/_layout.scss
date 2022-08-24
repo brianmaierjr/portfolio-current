@@ -3,27 +3,33 @@
     display: grid;
     grid-template-columns: repeat(24, 1fr);
   }
+
   .sectionSplit__left {
     grid-column: 3 / span 7;
   }
+
   .sectionSplit__right {
     grid-column: 12 / span 11;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .header__content .btn {
     align-self: flex-start;
   }
+
   .sectionPartial {
     width: 75%;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
-    box-shadow: 1em 1em 0 0 var(--gray);
+    box-shadow: 1em 1em 0 0 var(--surface1);
   }
-  .sectionPartial > * {
+
+  .sectionPartial>* {
     grid-column: 3 / span 14;
   }
+
   .sectionContentFull {
     grid-column: 8 / span 14;
   }
