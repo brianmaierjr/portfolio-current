@@ -13,12 +13,19 @@ body {
   border-left: 6px solid var(--primary);
 }
 
-// @media (prefers-color-scheme: light) {
-//   body {
-//     background-color: white;
-//     color: var(--charcoal);
-//   }
-// }
+// Scrollbar Styling
+body::-webkit-scrollbar {
+  width: .75em;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--surface2);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);    /* color of the scroll thumb */
+  border-radius: 0;       /* roundness of the scroll thumb */
+}
 
 .section {
   padding-top: var(--sp-section);
