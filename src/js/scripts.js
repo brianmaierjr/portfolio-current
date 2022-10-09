@@ -12,13 +12,9 @@ getShots().catch(error => {
 async function getShots() {
   let response = await fetch(dribble_url);
   let data = await response.json();
-  console.log(data);
-
 
   data.forEach(function (shot) {
     const target = document.getElementById('shots');
-    console.log(shot.html_url);
-    console.log(shot.images.hidpi);
     const div = document.createElement('div');
     div.classList.add('shot');
     div.innerHTML =
@@ -83,7 +79,7 @@ async function getShots() {
   window.addEventListener("resize", updateWindowSize);
 })();
 
-
+// Color Mode Toggle
 if (window.CSS && CSS.supports("color", "var(--primary)")) {
   var toggleColorMode = function toggleColorMode(e) {
     // Switch to Light Mode
