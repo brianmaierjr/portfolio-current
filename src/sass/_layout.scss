@@ -22,8 +22,11 @@
   .sectionPartial {
     width: 75%;
     display: grid;
+    background-color: var(--surface1);
     grid-template-columns: repeat(18, 1fr);
     box-shadow: 1em 1em 0 0 var(--surface1);
+    padding-top: calc(var(--sp-section) * 0.6);
+    padding-bottom: calc(var(--sp-section) * 0.6);
   }
 
   .sectionPartial>* {

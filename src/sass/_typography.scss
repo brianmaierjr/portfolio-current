@@ -39,8 +39,8 @@ h4,
   font-size: var(--h4-font-size);
 }
 
-h1 .subheading,
-h2 .subheading {
+h1 .eyebrow,
+h2 .eyebrow {
   font-family: var(--font-hk-bold);
   font-weight: normal;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ h2 .subheading {
 }
 
 // @media (prefers-color-scheme: light) {
-//   h1 .subheading {
+//   h1 .eyebrow {
 //     color: var(--gray);
 //   }
 // }

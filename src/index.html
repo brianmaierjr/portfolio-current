@@ -4,115 +4,289 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 ---
 
 <header class="section sectionSplit sectionGrid">
+  {% include dark-mode-toggle.html %}
 
-	<!--- Light mode button --->
-	<button class="color-mode__btn light--hidden" aria-label="Toggle light mode">
-		<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="yellow" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="60" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="128" y1="36" x2="128" y2="16" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="62.9" y1="62.9" x2="48.8" y2="48.8" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="36" y1="128" x2="16" y2="128" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="62.9" y1="193.1" x2="48.8" y2="207.2" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="220" x2="128" y2="240" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="193.1" y1="193.1" x2="207.2" y2="207.2" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="220" y1="128" x2="240" y2="128" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="193.1" y1="62.9" x2="207.2" y2="48.8" fill="none" stroke="yellow" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-	</button>
-
-	<!--- Dark mode button --->
-	<button class="color-mode__btn dark--hidden" aria-label="Toggle dark mode">
-		<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#6d55f5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="#6d55f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-	</button>
-
-	<div class="header__hero sectionSplit__left">
-		<picture> 
-			<source srcset="{{ 'assets/img/me.avif' | url }}" type="image/avif" media="(min-width: 801px)">
-			<source srcset="{{ 'assets/img/me--sm.avif' | url }}" type="image/avif" media="(max-width: 800px)">
-			<source srcset="{{ 'assets/img/me.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
-			<source srcset="{{ 'assets/img/me--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-			<img src="{{ 'assets/img/me.jpg' | url }}" alt="Fine looking lad.">
-		</picture>
-	</div>
-	<div class="header__content sectionSplit__right">
-		<h1 class="u-text--purple">
-			<span class="subheading">Brian Maier Jr.</span><br>
-			UI/UX Designer &amp; Front-end Developer
-		</h1>
-		<p>Just trying to earn a living by making cool shit that people enjoy. Thanks for stopping by.</p>
-		<div class="btnGroup">
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn" target="_blank"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
-			<a href="#work" class="btn btn--outline scroll"><span class="btn__icon">{% include icons/eye.svg %}</span> View My Work</a>
-		</div>
-	</div>
-	<ul class="headerSocial socialLinks u-noList"> 
-		<li>
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." target="_blank" rel="noopener">
-				{% include icons/envelope.svg %}
-				<span class="sr-only">Send me an email</span>
-			</a>
-		</li>
-		<li>
-			<a href="https://dribbble.com/brianmaierjr" target="_blank" rel="noopener"
-				>{% include icons/dribbble.svg %}
-				<span class="sr-only">Check out my designs on Dribble</span></a
-			>
-		</li>
-		<li>
-			<a href="https://twitter.com/brianmaierjr" target="_blank" rel="noopener"
-				>{% include icons/twitter.svg %}
-				<span class="sr-only">See me ramble on Twitter</span></a
-			>
-		</li>		
-		<li>
-			<a href="https://github.com/brianmaierjr" target="_blank" rel="noopener"
-				>{% include icons/github.svg %}
-				<span class="sr-only">See what I've been coding on GitHub</span></a
-			>
-		</li>
-	</ul>
+  <div class="header__hero sectionSplit__left">
+    <picture>
+      <source
+        srcset="{{ 'assets/img/me.avif' | url }}"
+        type="image/avif"
+        media="(min-width: 801px)"
+      />
+      <source
+        srcset="{{ 'assets/img/me--sm.avif' | url }}"
+        type="image/avif"
+        media="(max-width: 800px)"
+      />
+      <source
+        srcset="{{ 'assets/img/me.jpg' | url }}"
+        type="image/jpeg"
+        media="(min-width: 801px)"
+      />
+      <source
+        srcset="{{ 'assets/img/me--sm.jpg' | url }}"
+        type="image/jpeg"
+        media="(max-width: 800px)"
+      />
+      <img src="{{ 'assets/img/me.jpg' | url }}" alt="Fine looking lad." />
+    </picture>
+  </div>
+  <div class="header__content sectionSplit__right">
+    <h1 class="u-text--purple">
+      <span class="eyebrow">Brian Maier Jr.</span><br />
+      UI/UX Designer &amp; Front-end Developer
+    </h1>
+    <p>
+      Just trying to earn a living by making cool shit that people enjoy. Thanks
+      for stopping by.
+    </p>
+    <div class="btnGroup">
+      <a
+        href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
+        class="btn"
+        target="_blank"
+        ><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me
+        a message</a
+      >
+      <a href="#work" class="btn btn--outline scroll"
+        ><span class="btn__icon">{% include icons/eye.svg %}</span> View My
+        Work</a
+      >
+    </div>
+  </div>
+  <ul class="headerSocial socialLinks u-noList">
+    <li>
+      <a
+        href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
+        target="_blank"
+        rel="noopener"
+      >
+        {% include icons/envelope.svg %}
+        <span class="sr-only">Send me an email</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://dribbble.com/brianmaierjr" target="_blank" rel="noopener"
+        >{% include icons/dribbble.svg %}
+        <span class="sr-only">Check out my designs on Dribble</span></a
+      >
+    </li>
+    <li>
+      <a href="https://twitter.com/brianmaierjr" target="_blank" rel="noopener"
+        >{% include icons/twitter.svg %}
+        <span class="sr-only">See me ramble on Twitter</span></a
+      >
+    </li>
+    <li>
+      <a href="https://github.com/brianmaierjr" target="_blank" rel="noopener"
+        >{% include icons/github.svg %}
+        <span class="sr-only">See what I've been coding on GitHub</span></a
+      >
+    </li>
+  </ul>
 </header>
 <main>
-	<section data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-offset="200" class="experience u-bg--purple section sectionPartial pullLeft">
-		{% include icons/devices.svg %}
-		<h2>10+ Years of Experience</h2>
-		<p>I have over a decade of experience crafting experiences for users that make the web a better and more beautiful place. Currently I'm doing all things front-end for the fantastic folks at <a href="https://cloverlearning.com" target="_blank" rel="noopener">Clover Learning</a> in Louisville, Kentucky.</p>
-		<p>Every now and then I entertain freelance work if it's the right fit. If you think I'd be good for your product, please feel free to <a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together.">reach out</a>.</p>
-	</section>
-	<section class="work section" id="work">
-		<div class="work__header sectionContentFull">
-			<h2 class="u-text--purple">It's all about the work</h2>
-			<p>Here's a preview of what I've been working on from my <a href="https://dribbble.com/brianmaierjr" target="_blank">Dribbble</a>. For more examples, <a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." target="_blank" rel="noopener">send me an email!</a></p>
-		</div>
-		<div class="work__main">
-			<div id="shots" class="shots" data-aos="fade-up" data-aos-easing="ease-in-out"></div>
-			<noscript>
-				<picture data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200"> 
-					<source srcset="{{ 'assets/img/degrees-online.avif' | url }}" type="image/avif" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/degrees-online--sm.avif' | url }}" type="image/avif" media="(max-width: 800px)">
-					<source srcset="{{ 'assets/img/degrees-online.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/degrees-online--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-					<img src="{{ 'assets/img/degrees-online.jpg' | url }}" alt="DegreesOnline.com Website" loading="lazy">
-				</picture>
-				<picture data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200"> 
-					<source srcset="{{ 'assets/img/oyl.avif' | url }}" type="image/avif" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/oyl--sm.avif' | url }}" type="image/avif" media="(max-width: 800px)">				
-					<source srcset="{{ 'assets/img/oyl.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/oyl--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-					<img src="{{ 'assets/img/oyl.jpg' | url }}" alt="On Your Left Cycles Website" loading="lazy">
-				</picture>
-				<picture data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200"> 
-					<source srcset="{{ 'assets/img/shawnee.avif' | url }}" type="image/avif" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/shawnee--sm.avif' | url }}" type="image/avif" media="(max-width: 800px)">				
-					<source srcset="{{ 'assets/img/shawnee.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/shawnee--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-					<img src="{{ 'assets/img/shawnee.jpg' | url }}" alt="Shawnee University Online Website" loading="lazy">
-				</picture>
-				<picture data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200">  
-					<source srcset="{{ 'assets/img/logos.avif' | url }}" type="image/avif" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/logos--sm.avif' | url }}" type="image/avif" media="(max-width: 800px)">				
-					<source srcset="{{ 'assets/img/logos.jpg' | url }}" type="image/jpeg" media="(min-width: 801px)">
-					<source srcset="{{ 'assets/img/logos--sm.jpg' | url }}" type="image/jpeg" media="(max-width: 800px)">
-					<img src="{{ 'assets/img/logos.jpg' | url }}" alt="Various Logo Designs by Yours Truly" loading="lazy">
-				</picture>
-			</noscript>
-		</div>
-	</section>
-	<section data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-offset="200" class="contact section sectionPartial pullLeft u-bg--purple"> 
-		<div class="contact__content">
-			<h2>Let's Make Something Together</h2>
-			<p>Get in touch with me to talk about whatever project you have on the horizon. Even if I'm not a good fit, I'll do my best to get you moving in the right direction. I can also be found doing work with the amazing creatives at <a href="https://etherblk.com" target="_blank" rel="noopener">Etherblack Industries</a> where we offer even more services!</p>
-			<a href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together." class="btn" target="_blank"><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me a message</a> 
-		</div> 
-	</section>
+  <section
+    data-aos="fade-right"
+    data-aos-easing="ease-in-out"
+    data-aos-offset="200"
+    class="experience u-bg--purple section sectionPartial pullLeft"
+  >
+    {% include icons/devices.svg %}
+    <h2>10+ Years of Experience</h2>
+    <p>
+      I have over a decade of experience crafting experiences for users that
+      make the web a better and more beautiful place. Currently I'm doing all
+      things front-end for the fantastic folks at
+      <a href="https://cloverlearning.com" target="_blank" rel="noopener"
+        >Clover Learning</a
+      >
+      in Louisville, Kentucky.
+    </p>
+    <p>
+      Every now and then I entertain freelance work if it's the right fit. If
+      you think I'd be good for your product, please feel free to
+      <a
+        href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
+        >reach out</a
+      >.
+    </p>
+  </section>
+  <section class="work section" id="work">
+    <div class="work__header sectionContentFull">
+      <h2 class="u-text--purple">It's all about the work</h2>
+      <p>
+        Here's a preview of what I've been working on from my
+        <a href="https://dribbble.com/brianmaierjr" target="_blank">Dribbble</a
+        >. For more examples,
+        <a
+          href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
+          target="_blank"
+          rel="noopener"
+          >send me an email!</a
+        >
+      </p>
+    </div>
+    <div class="work__main">
+      <div
+        id="shots"
+        class="shots"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+      ></div>
+      <noscript>
+        <picture
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="200"
+        >
+          <source
+            srcset="{{ 'assets/img/degrees-online.avif' | url }}"
+            type="image/avif"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/degrees-online--sm.avif' | url }}"
+            type="image/avif"
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="{{ 'assets/img/degrees-online.jpg' | url }}"
+            type="image/jpeg"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/degrees-online--sm.jpg' | url }}"
+            type="image/jpeg"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="{{ 'assets/img/degrees-online.jpg' | url }}"
+            alt="DegreesOnline.com Website"
+            loading="lazy"
+          />
+        </picture>
+        <picture
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="200"
+        >
+          <source
+            srcset="{{ 'assets/img/oyl.avif' | url }}"
+            type="image/avif"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/oyl--sm.avif' | url }}"
+            type="image/avif"
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="{{ 'assets/img/oyl.jpg' | url }}"
+            type="image/jpeg"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/oyl--sm.jpg' | url }}"
+            type="image/jpeg"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="{{ 'assets/img/oyl.jpg' | url }}"
+            alt="On Your Left Cycles Website"
+            loading="lazy"
+          />
+        </picture>
+        <picture
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="200"
+        >
+          <source
+            srcset="{{ 'assets/img/shawnee.avif' | url }}"
+            type="image/avif"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/shawnee--sm.avif' | url }}"
+            type="image/avif"
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="{{ 'assets/img/shawnee.jpg' | url }}"
+            type="image/jpeg"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/shawnee--sm.jpg' | url }}"
+            type="image/jpeg"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="{{ 'assets/img/shawnee.jpg' | url }}"
+            alt="Shawnee University Online Website"
+            loading="lazy"
+          />
+        </picture>
+        <picture
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="200"
+        >
+          <source
+            srcset="{{ 'assets/img/logos.avif' | url }}"
+            type="image/avif"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/logos--sm.avif' | url }}"
+            type="image/avif"
+            media="(max-width: 800px)"
+          />
+          <source
+            srcset="{{ 'assets/img/logos.jpg' | url }}"
+            type="image/jpeg"
+            media="(min-width: 801px)"
+          />
+          <source
+            srcset="{{ 'assets/img/logos--sm.jpg' | url }}"
+            type="image/jpeg"
+            media="(max-width: 800px)"
+          />
+          <img
+            src="{{ 'assets/img/logos.jpg' | url }}"
+            alt="Various Logo Designs by Yours Truly"
+            loading="lazy"
+          />
+        </picture>
+      </noscript>
+    </div>
+  </section>
+  <section
+    data-aos="fade-right"
+    data-aos-easing="ease-in-out"
+    data-aos-offset="200"
+    class="contact section sectionPartial pullLeft u-bg--purple"
+  >
+    <div class="contact__content">
+      <h2>Let's Make Something Together</h2>
+      <p>
+        Get in touch with me to talk about whatever project you have on the
+        horizon. Even if I'm not a good fit, I'll do my best to get you moving
+        in the right direction. I can also be found doing work with the amazing
+        creatives at
+        <a href="https://etherblk.com" target="_blank" rel="noopener"
+          >Etherblack Industries</a
+        >
+        where we offer even more services!
+      </p>
+      <a
+        href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
+        class="btn"
+        target="_blank"
+        ><span class="btn__icon">{% include icons/envelope.svg %}</span> Send me
+        a message</a
+      >
+    </div>
+  </section>
 </main>
