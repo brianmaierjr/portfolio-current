@@ -11,18 +11,24 @@ body {
   font-size: clamp(1.125em, 2vw, 1.5em);
   line-height: 1.5;
   border-left: 6px solid var(--primary);
+
+}
+
+* {
+  scrollbar-width: auto;          /* "auto" or "thin" */
+  scrollbar-color: var(--primary) var(--surface2);   /* scroll thumb and track */ 
 }
 
 // Scrollbar Styling
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: .75em;               /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: var(--surface2);        /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: var(--primary);    /* color of the scroll thumb */
   border-radius: 0;       /* roundness of the scroll thumb */
 }
