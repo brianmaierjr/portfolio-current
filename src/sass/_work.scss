@@ -1,49 +1,49 @@
 .work__main picture {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 @media (min-width: 800px) {
-  .work {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-  }
+    .work {
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+    }
 
-  .work__header {
-    margin-bottom: 3em;
-  }
+    .work__header {
+        margin-bottom: 3em;
+    }
 
-  .work__main {
-    grid-column: 3 / span 20;
-  }
+    .work__main {
+        grid-column: 3 / span 20;
+    }
 
-  .work__main img {
-    width: 100%;
-  }
+    .work__main img {
+        width: 100%;
+    }
 
-  .work__main picture {
-    margin-bottom: 4em;
-  }
+    .work__main picture {
+        margin-bottom: 4em;
+    }
 }
 
 .shots {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--sp-sm);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-sm);
 
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-  }
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  @media (min-width: 1800px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    @media (min-width: 1800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .shot {
-  transition: .2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 
-  &:hover,
-  &:focus {
-    opacity: .5;
-  }
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
 }

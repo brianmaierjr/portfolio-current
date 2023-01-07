@@ -1,23 +1,22 @@
 {
-  "name": "eleventy-sample",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run sass && eleventy",
-    "sass": "node-sass -o _site/assets/css --output-style compact src/sass",
-    "serve": "npm-run-all sass --parallel watch:*",
-    "watch:eleventy": "eleventy --serve",
-    "watch:sass": "npm run sass -- --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "dependencies": {}
+    "name": "eleventy-sample",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm run build:sass && eleventy",
+        "build:sass": "sass src/sass:_site/assets/css",
+        "serve": "npm-run-all build:sass --parallel watch:*",
+        "watch:eleventy": "eleventy --serve",
+        "watch:sass": "sass --watch src/sass:_site/assets/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.57.1"
+    }
 }
