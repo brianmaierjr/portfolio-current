@@ -1,11 +1,18 @@
 title: UI/UX Designer & Front-end Developer
-intro: Just trying to earn a living by making cool shit that people enjoy. Thanks for stopping by.
+intro: Just trying to earn a living by making cool shit that people enjoy.
+  Thanks for stopping by.
 project:
-    - name: 147 Colors
-      tags: HTML CSS JAVASCRIPT ASTRO
-      description:
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit
-          non mi porta gravida at eget metus. Donec id elit non mi porta gravida at
-          eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      photo: assets/img/147Colors.png
+  - name: 147 Colors
+    tags: HTML CSS JAVASCRIPT ASTRO
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+      posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit
+      non mi porta gravida at eget metus. Donec id elit non mi porta gravida at
+      eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    photo: assets/img/147Colors.png
+  - name: Arbitrary Awards
+    tags: CSS HTML JAVASCRIPT
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+      posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit
+      non mi porta gravida at eget metus. Donec id elit non mi porta gravida at
+      eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    photo: assets/img/ArbitraryAwards.webp
