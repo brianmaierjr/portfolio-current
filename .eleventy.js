@@ -1,7 +1,7 @@
+const yaml = require("js-yaml");
+
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addShortcode("excerpt", (article) =>
-		extractExcerpt(article)
-	);
+	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 	eleventyConfig.addWatchTarget("_site/assets/css/*.css");
 	eleventyConfig.addPassthroughCopy({ "src/img": "assets/img" });
 	eleventyConfig.addPassthroughCopy({ "src/fonts": "assets/fonts" });

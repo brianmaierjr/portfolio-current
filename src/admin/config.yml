@@ -9,7 +9,7 @@ collections:
       files:
           - label: "Home Page"
             name: "home"
-            file: "src/_data/home.yml"
+            file: "src/_data/home.yaml"
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Intro, name: intro, widget: markdown }
