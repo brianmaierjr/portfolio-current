@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run build:sass && eleventy",
         "build:sass": "sass src/sass:_site/assets/css",
-        "serve": "npm-run-all build:sass --parallel watch:*",
+        "dev": "npm-run-all build:sass --parallel watch:*",
         "watch:eleventy": "eleventy --serve",
         "watch:sass": "sass --watch src/sass:_site/assets/css"
     },

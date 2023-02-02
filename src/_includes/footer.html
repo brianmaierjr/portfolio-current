@@ -50,20 +50,20 @@
 	gsap.from(".experience", {
 		scrollTrigger: {
 			trigger: ".experience",
-			start: "top 50%",
+			start: "top 70%",
 		}, 
 	x: -500,
 	opacity: 0,
-	duration: .75
+	duration: .5
 	});
-	gsap.from(".experience *", {
+	gsap.from(".experience > *", {
 		scrollTrigger: {
 			trigger: ".experience",
-			start: "top 50%",
+			start: "top 70%",
 		}, 
 	y: 100,
 	opacity: 0,
-	stagger: .3,
+	stagger: .5,
 	duration: .75
 	});
 
@@ -71,15 +71,13 @@
 	gsap.from(".work__header > *", {
 		scrollTrigger: {
 			trigger: ".work",
-			start: "top 50%",
+			start: "top 70%",
 		}, 
-	y: 100,
+	x: 100,
 	opacity: 0,
-	stagger: .3,
+	stagger: .5,
 	duration: .75
 	});
-
-	// Shots
 	gsap.from(".shots", {
 		scrollTrigger: {
 			trigger: ".shots",
@@ -87,29 +85,30 @@
 		}, 
 	y: 100,
 	opacity: 0,
-	duration: .75
+	duration: .5
 	});
 
-	// Contact
-	gsap.from(".contact", {
-	scrollTrigger: {
-		trigger: ".contact",
-		start: "top 50%",
-	}, 
-		x: -500,
-		opacity: 0,
-		duration: .75
-	});
-	gsap.from(".contact__content > *", {
-		scrollTrigger: {
-			trigger: ".contact",
-			start: "top 50%",
-		}, 
-	y: 100,
-	opacity: 0,
-	stagger: .3,
-	duration: .75
-	});
+    // Contact
+    // gsap.from(".contact", {
+    //     scrollTrigger: {
+    //         trigger: "#contact",
+    //         start: "top 70%",
+    //     },
+    //     x: -500,
+    //     opacity: 0,
+    //     duration: 0.5,
+    // });
+    // gsap.from(".contact__content > *", {
+    //     scrollTrigger: {
+    //         trigger: "#contact",
+    //         start: "top 69%",
+    //     },
+    //     y: 100,
+    //     stagger: 0.3,
+    //     opacity: 0,
+    //     duration: 0.5,
+    // });
+
 
 	window.addEventListener("load", function () {
 		tl.play();
