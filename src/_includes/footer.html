@@ -39,7 +39,7 @@
 
 <script>
 	// Header
-	var tl = gsap.timeline({ paused: true, defaults: { ease: "power2", duration:.3, opacity: 0 }})
+	var tl = gsap.timeline({ paused: true, defaults: { ease: "power1", duration:.3, opacity: 0 }})
 	.from(".header__hero, .color-mode__btn", { duration: .5 })
 	.from("h1", { y: 100 })
 	.from(".header__content p", { y: 100 })
@@ -78,26 +78,31 @@
 	stagger: .5,
 	duration: .75
 	});
-	gsap.from(".shots", {
-		scrollTrigger: {
-			trigger: ".shots",
-			start: "top 70%",
-		}, 
-	y: 100,
-	opacity: 0,
-	duration: .5
-	});
+
+	const work = document.querySelectorAll(".work picture");
+	work.forEach( (el)=> {
+		gsap.from(el, { 
+			scrollTrigger: {
+				trigger: el,
+				start: "top 70%",
+			}, 
+			y: 100,
+			opacity: 0,
+			duration: .5,
+			ease: "power1",
+		})
+	})
 
     // Contact
-    // gsap.from(".contact", {
-    //     scrollTrigger: {
-    //         trigger: "#contact",
-    //         start: "top 70%",
-    //     },
-    //     x: -500,
-    //     opacity: 0,
-    //     duration: 0.5,
-    // });
+    gsap.from(".contact", {
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 70%",
+        },
+        x: -500,
+        opacity: 0,
+        duration: 0.5,
+    });
     // gsap.from(".contact__content > *", {
     //     scrollTrigger: {
     //         trigger: "#contact",

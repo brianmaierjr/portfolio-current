@@ -21,6 +21,9 @@
     <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | url }}" color="#6d55f5">
     <meta name="msapplication-TileColor" content="#6d55f5">
     <meta name="theme-color" content="#141414">
+    
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <!-- Open Graph Meta -->
     <meta content="{{ metadata.title }}" property="og:site_name">
@@ -93,5 +96,16 @@
   <body>
     {{ content | safe }}
     {% include footer.html %}
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
   </body>
 </html>
