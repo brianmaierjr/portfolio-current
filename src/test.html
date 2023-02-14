@@ -1,0 +1,32 @@
+---
+layout: default.liquid
+title: Style Guide
+---
+
+<header class="section sectionGrid">
+	{% include dark-mode-toggle.html %}
+
+	<div class="header__content sectionContentFull">
+		<h1 class="u-text--purple">
+			<span class="eyebrow">BrianMaierJr.com</span><br />
+			{{ test.title}}
+		</h1>
+		{{ test.intro}}
+	</div>
+</header>
+<main>
+	<section class="u-bg--purple section sectionPartial pullLeft">
+		<h2>{{ test.coolTitle}}</h2>
+		{{ test.cool}}
+	</section>
+	<section class="section sectionGrid">
+		<div class="sectionContentFull">
+			<h2>Projects</h2>
+			{{ for project in team.projects }}
+			<h3>{{ project.title }}</h3>
+			<p>{{ project.description }}</p>
+			<img src="{{" project.photo }} alt="" />
+			{{ end }}
+		</div>
+	</section>
+</main>

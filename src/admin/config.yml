@@ -25,3 +25,23 @@ collections:
                             widget: markdown,
                         }
                       - { label: Photo, name: photo, widget: image }
+          - label: "Test Page"
+            name: "test"
+            file: "src/_data/test.yaml"
+            fields:
+                - { label: Title, name: title, widget: string }
+                - { label: Intro, name: intro, widget: markdown }
+                - { label: Cool Title, name: coolTitle, widget: markdown }
+                - { label: Cool Content, name: cool, widget: markdown }
+                - label: Project
+                  name: projects
+                  widget: list
+                  fields:
+                      - { label: Name, name: name, widget: string }
+                      - { label: Tags, name: tags, widget: string }
+                      - {
+                            label: Description,
+                            name: description,
+                            widget: markdown,
+                        }
+                      - { label: Photo, name: photo, widget: image }
