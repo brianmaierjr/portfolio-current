@@ -31,9 +31,9 @@ collections:
             fields:
                 - { label: Title, name: title, widget: string }
                 - { label: Intro, name: intro, widget: markdown }
-                - { label: Cool Title, name: coolTitle, widget: markdown }
+                - { label: Cool Title, name: coolTitle, widget: string }
                 - { label: Cool Content, name: cool, widget: markdown }
-                - label: Project
+                - label: Projects
                   name: projects
                   widget: list
                   fields:

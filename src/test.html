@@ -17,16 +17,16 @@ title: Style Guide
 <main>
 	<section class="u-bg--purple section sectionPartial pullLeft">
 		<h2>{{ test.coolTitle}}</h2>
-		{{ test.cool}}
+		<div>{{ test.cool}}</div>
 	</section>
 	<section class="section sectionGrid">
 		<div class="sectionContentFull">
 			<h2>Projects</h2>
-			{{ for project in team.projects }}
-			<h3>{{ project.title }}</h3>
+
+			{{ for project in test.projects }}
+			<h3>{{ project.name }}</h3>
 			<p>{{ project.description }}</p>
-			<img src="{{" project.photo }} alt="" />
-			{{ end }}
+			<img src="{{ project.photo }}" alt="" /> {{ end }}
 		</div>
 	</section>
 </main>
