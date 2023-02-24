@@ -6,7 +6,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 <header class="section sectionSplit sectionGrid">
 	{% include dark-mode-toggle.html %}
 
-	<div class="header__hero sectionSplit__left">
+	<div class="header__hero sectionSplit__left u-hidden">
 		<picture>
 			<source
 				srcset="{{ 'assets/img/me.avif' | url }}"
@@ -35,12 +35,12 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 		</picture>
 	</div>
 	<div class="header__content sectionSplit__right">
-		<h1 class="u-text--purple">
+		<h1 class="u-text--purple u-hidden">
 			<span class="eyebrow">Brian Maier Jr.</span><br />
 			{{ home.title }}
 		</h1>
-		<p>{{ home.intro }}</p>
-		<div class="btnGroup">
+		<p class="u-hidden">{{ home.intro }}</p>
+		<div class="btnGroup u-hidden">
 			<a
 				href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
 				class="btn"
@@ -54,7 +54,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 			>
 		</div>
 	</div>
-	<ul class="headerSocial socialLinks u-noList">
+	<ul class="headerSocial socialLinks u-noList u-hidden">
 		<li>
 			<a
 				href="mailto:brianmaierjr@gmail.com?subject=Hey%20dude.%20Let%27s%20make%20magic%20together."
@@ -97,7 +97,9 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 	</ul>
 </header>
 <main>
-	<section class="experience u-bg--purple section sectionPartial pullLeft">
+	<section
+		class="experience u-bg--purple section sectionPartial pullLeft u-hidden"
+	>
 		{% include icons/devices.svg %}
 		<h2>10+ Years of Experience</h2>
 		<p>
@@ -210,8 +212,8 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 
 	<section class="work section" id="work">
 		<div class="work__header sectionContentFull">
-			<h2 class="u-text--purple">It's all about the work</h2>
-			<p>
+			<h2 class="u-text--purple u-hidden">It's all about the work</h2>
+			<p class="u-hidden">
 				For more examples and glimpes of things I'm working on, check
 				out my
 				<a href="https://dribbble.com/brianmaierjr" target="_blank"
@@ -221,7 +223,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 			</p>
 		</div>
 		<div class="work__main">
-			<picture>
+			<picture class="u-hidden">
 				<source
 					srcset="{{ 'assets/img/degrees-online.avif' | url }}"
 					type="image/avif"
@@ -248,7 +250,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 					loading="lazy"
 				/>
 			</picture>
-			<picture>
+			<picture class="u-hidden">
 				<source
 					srcset="{{ 'assets/img/oyl.avif' | url }}"
 					type="image/avif"
@@ -275,7 +277,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 					loading="lazy"
 				/>
 			</picture>
-			<picture>
+			<picture class="u-hidden">
 				<source
 					srcset="{{ 'assets/img/shawnee.avif' | url }}"
 					type="image/avif"
@@ -302,7 +304,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 					loading="lazy"
 				/>
 			</picture>
-			<picture>
+			<picture class="u-hidden">
 				<source
 					srcset="{{ 'assets/img/logos.avif' | url }}"
 					type="image/avif"
@@ -333,7 +335,7 @@ title: Brian Maier Jr. | UI/UX Designer & Front-end Developer
 	</section>
 	<section
 		id="contact"
-		class="contact section sectionPartial pullLeft u-bg--purple"
+		class="contact section sectionPartial pullLeft u-bg--purple u-hidden"
 	>
 		<div class="contact__content">
 			<h2>Let's Make Something Together</h2>

@@ -39,7 +39,7 @@
 
 <script>
 	// Header
-	var tl = gsap.timeline({ paused: true, defaults: { ease: "power1", duration:.3, opacity: 0 }})
+	var tl = gsap.timeline({ paused: true, defaults: { ease: "power1", duration:.3, opacity: 0, autoAlpha:0  }})
 	.from(".header__hero, .color-mode__btn", { duration: .5 })
 	.from("h1", { y: 100 })
 	.from(".header__content p", { y: 100 })
@@ -54,7 +54,8 @@
 		}, 
 	x: -500,
 	opacity: 0,
-	duration: .5
+	duration: .5,
+	autoAlpha:0
 	});
 	gsap.from(".experience > *", {
 		scrollTrigger: {
@@ -64,7 +65,8 @@
 	y: 100,
 	opacity: 0,
 	stagger: .5,
-	duration: .75
+	duration: .75,
+	autoAlpha:0
 	});
 
 	// Work
@@ -76,7 +78,8 @@
 	x: 100,
 	opacity: 0,
 	stagger: .5,
-	duration: .75
+	duration: .75,
+	autoAlpha:0
 	});
 
 	const work = document.querySelectorAll(".work picture");
@@ -90,6 +93,7 @@
 			opacity: 0,
 			duration: .5,
 			ease: "power1",
+			autoAlpha:0
 		})
 	})
 
@@ -102,6 +106,7 @@
         x: -500,
         opacity: 0,
         duration: 0.5,
+		autoAlpha:0
     });
     // gsap.from(".contact__content > *", {
     //     scrollTrigger: {

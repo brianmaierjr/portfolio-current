@@ -1,14 +1,18 @@
 // Utility
 .u-bg--purple {
-    background-color: var(--purple);
-    color: white;
+	background-color: var(--purple);
+	color: white;
 }
 
 .u-text--purple {
-    color: var(--purple);
+	color: var(--purple);
 }
 
 .u-noList {
-    list-style: none;
-    padding-left: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+.u-hidden {
+	visibility: hidden;
 }
