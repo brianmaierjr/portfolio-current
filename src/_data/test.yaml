@@ -1,47 +1,45 @@
-title: Test Page!
+title: Test Page! Check it out Kurt
 intro: "Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-    consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod
-    semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-    vestibulum.
+  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+  consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod
+  semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+  vestibulum.
 
-    Donec ullamcorper nulla non metus auctor fringilla.\r\rCras mattis
-    consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur
-    ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere
-    velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Morbi
-    leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper
-    nulla non metus auctor fringilla."
+  Donec ullamcorper nulla non metus auctor fringilla.\r\rCras mattis
+  consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur
+  ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere
+  velit aliquet. Donec sed odio dui. Curabitur blandit tempus porttitor. Morbi
+  leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper
+  nulla non metus auctor fringilla."
 coolTitle: Cool Section
 cool: "Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-    consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod
-    semper. Aenean eu leo quam.
+  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+  consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod
+  semper. Aenean eu leo quam.
 
-    Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper
-    nulla non metus auctor fringilla.\r\rCras mattis consectetur purus sit amet
-    fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
-    odio dui. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac
-    consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor
-    fringilla."
+  Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper
+  nulla non metus auctor fringilla.\r\rCras mattis consectetur purus sit amet
+  fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+  Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed
+  odio dui. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac
+  consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor
+  fringilla."
 projects:
-    - name: 147 Colors
-      tags: CSS HTML ETC
-      description:
-          Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
-          nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor
-          mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean
-          lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus
-          auctor fringilla. Donec sed odio dui. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et.
-      photo: assets/img/147Colors.png
-    - name: Arbitrary Awards
-      tags: CSS HTML JAVASCRIPT
-      description:
-          Donec id elit non mi porta gravida at eget metus. Vestibulum id
-          ligula porta felis euismod semper. Vestibulum id ligula porta felis
-          euismod semper. Integer posuere erat a ante venenatis dapibus posuere
-          velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl
-          consectetur et. Vestibulum id ligula porta felis euismod semper. Nullam id
-          dolor id nibh ultricies vehicula ut id elit.
-      photo: assets/img/ArbitraryAwards.webp
+  - name: 147 Colors
+    tags: CSS HTML ETC
+    description: Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum
+      nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor
+      mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean
+      lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus
+      auctor fringilla. Donec sed odio dui. Praesent commodo cursus magna, vel
+      scelerisque nisl consectetur et.
+    photo: assets/img/147Colors.png
+  - name: Arbitrary Awards
+    tags: CSS HTML JAVASCRIPT
+    description: Donec id elit non mi porta gravida at eget metus. Vestibulum id
+      ligula porta felis euismod semper. Vestibulum id ligula porta felis
+      euismod semper. Integer posuere erat a ante venenatis dapibus posuere
+      velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl
+      consectetur et. Vestibulum id ligula porta felis euismod semper. Nullam id
+      dolor id nibh ultricies vehicula ut id elit.
+    photo: assets/img/ArbitraryAwards.webp
