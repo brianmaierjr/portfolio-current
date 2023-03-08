@@ -1,126 +1,131 @@
 // Global
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--surface1);
-  color: var(--text-color);
-  font-family: var(--font-hk-regular);
-  font-size: clamp(1.125em, 2vw, 1.5em);
-  line-height: 1.5;
-  border-left: 6px solid var(--primary);
-
+	background-color: var(--surface1);
+	color: var(--text-color);
+	font-family: var(--font-hk-regular);
+	font-size: clamp(1.125em, 2vw, 1.5em);
+	line-height: 1.5;
+	border-left: 6px solid var(--primary);
 }
 
 * {
-  scrollbar-width: auto;          /* "auto" or "thin" */
-  scrollbar-color: var(--primary) var(--surface2);   /* scroll thumb and track */ 
+	scrollbar-width: auto; /* "auto" or "thin" */
+	scrollbar-color: var(--primary) var(--surface2); /* scroll thumb and track */
 }
 
 // Scrollbar Styling
 *::-webkit-scrollbar {
-  width: .6em;               /* width of the entire scrollbar */
+	width: 0.6em; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--surface2);        /* color of the tracking area */
+	background: var(--surface2); /* color of the tracking area */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary);    /* color of the scroll thumb */
-  border-radius: 0;       /* roundness of the scroll thumb */
+	background-color: var(--primary); /* color of the scroll thumb */
+	border-radius: 0; /* roundness of the scroll thumb */
 }
 
 .section {
-  padding-top: var(--sp-section);
-  padding-bottom: var(--sp-section);
-  padding-right: var(--mobile-padding);
-  padding-left: var(--mobile-padding);
+	padding-top: var(--sp-section);
+	padding-bottom: var(--sp-section);
+	padding-right: var(--mobile-padding);
+	padding-left: var(--mobile-padding);
 }
 
 @media (min-width: 800px) {
-  .section.pullLeft {
-    padding-top: calc(var(--sp-section) * 0.6);
-    padding-bottom: calc(var(--sp-section) * 0.6);
-  }
+	.section.pullLeft {
+		padding-top: calc(var(--sp-section) * 0.6);
+		padding-bottom: calc(var(--sp-section) * 0.6);
+	}
 }
 
 ::selection {
-  background-color: var(--secondary);
-  color: var(--surface2);
+	background-color: var(--secondary);
+	color: var(--surface2);
 }
 
 ::-moz-selection {
-  background-color: var(--secondary);
-  color: var(--surface2);
+	background-color: var(--secondary);
+	color: var(--surface2);
 }
 
 @media (min-width: 800px) {
-  body {
-    background-color: var(--surface1);
-    border-left: none;
-    position: relative;
-  }
+	body {
+		background-color: var(--surface1);
+		border-left: none;
+		position: relative;
+	}
 
-  body:before {
-    content: "";
-    background-color: var(--surface2);
-    display: block;
-    width: 75%;
-    height: 98%;
-    position: absolute;
-    top: 1%;
-    right: 4.166%;
-    z-index: -1;
-    border-radius: 0.5em;
-  }
+	body:before {
+		content: "";
+		background-color: var(--surface2);
+		display: block;
+		width: 75%;
+		height: calc(100% - 4em);
+		position: absolute;
+		top: 2em;
+		right: 2em;
+		z-index: -1;
+		border-radius: 0.5em;
 
-  // @media (prefers-color-scheme: light) {
-  //   body {
-  //     background-color: white;
-  //   }
+		@media (min-width: 1200px) {
+			height: calc(100% - 6em);
+			top: 3em;
+			right: 3em;
+		}
+	}
 
-  //   body:before {
-  //     background-color: var(--gray--light);
-  //   }
-  // }
+	// @media (prefers-color-scheme: light) {
+	//   body {
+	//     background-color: white;
+	//   }
 
-  .section {
-    padding-left: 0;
-    padding-right: 0;
-  }
+	//   body:before {
+	//     background-color: var(--gray--light);
+	//   }
+	// }
+
+	.section {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 a {
-  color: currentColor;
+	color: currentColor;
 }
 
 a:not(.btn):hover,
 a:not(.btn):focus {
-  text-decoration: underline wavy currentColor;
+	text-decoration: underline wavy currentColor;
 }
 
 hr {
-  width: 100%;
+	width: 100%;
 }
 
 .sr-only {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
 /* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
 :root[color-mode="light"] .light--hidden {
-  display: none;
+	display: none;
 }
 
 /* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
 :root[color-mode="dark"] .dark--hidden {
-  display: none;
+	display: none;
 }

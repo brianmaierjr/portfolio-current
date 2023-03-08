@@ -1,62 +1,62 @@
 // Buttons
 .btn {
-  background-color: var(--secondary);
-  color: var(--charcoal);
-  padding: 0.5em 1.5em 0.6em;
-  text-decoration: none;
-  border-radius: 3em;
-  font-family: var(--font-hk-bold);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s all ease-in-out;
-  font-size: 1em;
-  border: 2px solid var(--secondary);
+	background-color: var(--secondary);
+	color: var(--charcoal);
+	padding: 0.5em 1.5em 0.6em;
+	text-decoration: none;
+	border-radius: 3em;
+	font-family: var(--font-hk-bold);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s all ease-in-out;
+	font-size: 1em;
+	border: 2px solid var(--secondary);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: white;
-  color: var(--primary);
-  border-color: var(--white);
+	background-color: white;
+	color: var(--primary);
+	border-color: var(--white);
 }
 
 .btn:hover .btn__icon,
 .btn:focus .btn__icon {
-  fill: currentColor;
+	fill: currentColor;
 }
 
 .btn__icon {
-  margin-right: 0.5em;
-  display: flex;
-  align-items: center;
-  height: 1.2em;
-  width: 1.2em;
+	margin-right: 0.5em;
+	display: flex;
+	align-items: center;
+	height: 1.2em;
+	width: 1.2em;
 }
 
 .btn__icon svg {
-  fill: currentColor;
-  width: 100%;
-  height: auto;
+	fill: currentColor;
+	width: 100%;
+	height: auto;
 }
 
 .btn--outline {
-  background-color: transparent;
-  border: 2px solid currentColor;
-  color: var(--secondary);
+	background-color: transparent;
+	border: 2px solid currentColor;
+	color: var(--secondary);
 }
 
 html[color-mode="light"] {
-  .btn--outline {
-    color: var(--primary);
-  }
+	.btn--outline {
+		color: var(--primary);
+	}
 
-  .btn:hover,
-  .btn:hover,
-  .btn--outline:hover,
-  .btn--outline:hover {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  }
+	.btn:hover,
+	.btn:hover,
+	.btn--outline:hover,
+	.btn--outline:hover {
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+	}
 }
 
 // @media (prefers-color-scheme: light) {
@@ -74,37 +74,40 @@ html[color-mode="light"] {
 
 .btn--outline:hover,
 .btn--outline:hover {
-  border: 2px solid var(--white);
-  color: var(--primary);
+	border: 2px solid var(--white);
+	color: var(--primary);
 }
 
 .btnGroup .btn {
-  margin: 0 1em 1em 0;
+	margin: 0 1em 1em 0;
 }
-
-
 
 // Color Mode Buttons
 
 .color-mode__btn {
-  position: absolute;
-  top: 2em;
-  right: 2em;
-  padding: .2em;
-  background-color: transparent;
-  border: none;
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	padding: 0.2em;
+	background-color: transparent;
+	border: none;
 
-  @media (min-width: 800px) {
-    top: 6vw;
-    right: 6vw;
-  }
+	@media (min-width: 800px) {
+		top: 3em;
+		right: 3em;
+	}
 
-  &:hover {
-    cursor: pointer;
-  }
+	@media (min-width: 1200px) {
+		top: 4em;
+		right: 4em;
+	}
 
-  svg {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
+	&:hover {
+		cursor: pointer;
+	}
+
+	svg {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
 }
